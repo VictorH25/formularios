@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select/datalista/textarea</title>
+</head>
+<body>
+    <h1>Select/Datalista/Textarea</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <option value="esc">----Escolha----</option>
+                <optgroup label="Região Suldeste">
+                    <option value="MA">Espirito Santo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="BA">Bahia</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="SE">Sergipe</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="prof">Profissão: </label>
+            <input type="text" name="profissao" id="prof" list="lstprof" placeholder="Qual sua profissão?">
+            <datalist id="lstprof">
+                <select>
+                    <select>
+                        <option>Médico</option>
+                        <option>Engenheiro</option>
+                        <option>Professor</option>
+                        <option>Advogado</option>
+                        <option>Cientista</option>
+                        <option>Artista</option>
+                        <option>Jornalista</option>
+                        <option>Designer</option>
+                        <option>Programador</option>
+                        <option>Psicólogo</option>
+                        <option>Arquiteto</option>
+                        <option>Enfermeiro</option>
+                        <option>Farmacêutico</option>
+                        <option>Fotógrafo</option>
+                        <option>Chef de Cozinha</option>
+                      </select>
+                      </select>
+            </datalist>
+        </p>
+
+        <label for="msg">Mensagem: </label><br>
+        <textarea name="mensagem" id="msg" cols="30" rows="10" placeholder="Deixe sua mensagem"></textarea><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+
+</body>
+</html>
